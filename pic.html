@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Search Google</title>
+</head>
+<body>
+    <div class="main pictures">
+        <div class="main__container">
+            <div class="main__top">
+                <nav class="main__link">
+                    <a href="index.html" class="main__item">Головна</a>
+                </nav>
+            </div>
+            <div class="main__search">
+                <form id="pictures-form" action="https://www.google.com/search" method="get">
+                    <input type="hidden" name="tbm" value="isch">
+                    <input class="main__field" type="text" name="q" id="search-input" placeholder="Введіть пошуковий запит або URL">
+                    <input type="submit" value="Search" id="search-button" class="btn">
+                </form>
+            </div>             
+        </div>
+    </div>
+</body>
+</html>

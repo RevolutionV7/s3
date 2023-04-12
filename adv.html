@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Search Google</title>
+</head>
+<body>
+    <div class="main advanced">
+        <div class="main__container">
+            <div class="main__top">
+                <nav class="main__link">
+                    <a href="index.html" class="main__item">Головна</a>
+                </nav>
+            </div>
+            <div class="advanced__search">
+                <p class="advanced__title">Знайти сторінки, що містять...</p>
+                <div class="advanced__block">
+                    <ul class="advanced__items">
+                        <li class="advanced__item">Усі ці слова:</li>
+                        <li class="advanced__item">Точне слово або фразу:</li>
+                        <li class="advanced__item">Будь-яке з цих слів:</li>
+                        <li class="advanced__item">Жодне з цих слів:</li>
+                    </ul>
+                    <form id="advanced-form" action="https://www.google.com/search" method="GET">
+                        <input type="text" id="all-words" name="as_q" class="advanced__field">
+                        <input type="text" id="exact-phrase" name="as_epq" class="advanced__field">
+                        <input type="text" id="any-words" name="as_oq" class="advanced__field">
+                        <input type="text" id="none-words" name="as_eq" class="advanced__field">
+                        <input type="submit" value="Search" class="advanced__btn btn">
+                      </form>    
+                </div>                              
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
